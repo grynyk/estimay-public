@@ -1,0 +1,23 @@
+name: Feature request
+description: Something that would help your team estimate.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Check the [roadmap](https://github.com/grynyk/estimay-public/blob/main/ROADMAP.md) and the open issues first; if it's there already, a 👍 on the issue helps us decide what comes next.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: The problem you'd like solved, or what your team does today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How you imagine it
+  - type: input
+    id: team
+    attributes:
+      label: Your team
+      description: Optional. For example, size, live or async, and the tracker you use.
