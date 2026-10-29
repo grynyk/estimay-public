@@ -9,6 +9,22 @@
 </p>
 
 <p align="center">
+  <a href="https://estimay.io"><img src="https://img.shields.io/website?url=https%3A%2F%2Festimay.io%2Fapi%2Fhealth&label=estimay.io&up_message=online&down_message=down&style=flat-square" alt="estimay.io status"></a>
+  <img src="https://img.shields.io/badge/price-free-0b35a3?style=flat-square" alt="Free">
+  <img src="https://img.shields.io/badge/sign--up-not%20needed-0b35a3?style=flat-square" alt="No sign-up">
+  <a href="https://estimay.io/privacy"><img src="https://img.shields.io/badge/hosted%20in-the%20EU-0b35a3?style=flat-square" alt="Hosted in the EU"></a>
+  <a href="https://estimay.io/mcp-scrum-poker"><img src="https://img.shields.io/badge/MCP-remote%20server-0b35a3?style=flat-square&logo=modelcontextprotocol&logoColor=white" alt="MCP server"></a>
+</p>
+
+<p align="center">
+  <a href="https://claude.ai/directory/estimay"><img src="https://img.shields.io/badge/Claude-directory-D97757?style=flat-square&logo=claude&logoColor=white" alt="In the Claude directory"></a>
+  <a href="https://workspace.google.com/marketplace/app/estimay/145713655865"><img src="https://img.shields.io/badge/Google%20Meet-add--on-00897B?style=flat-square&logo=googlemeet&logoColor=white" alt="Google Meet add-on"></a>
+  <a href="https://t.me/estimaybot"><img src="https://img.shields.io/badge/Telegram-%40estimaybot-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram bot"></a>
+  <a href="https://github.com/grynyk/estimay-claude"><img src="https://img.shields.io/badge/Claude%20Code-plugin-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude Code plugin"></a>
+  <a href="https://github.com/grynyk/estimay-public"><img src="https://img.shields.io/github/stars/grynyk/estimay-public?style=flat-square&logo=github&label=stars" alt="GitHub stars"></a>
+</p>
+
+<p align="center">
   <a href="https://estimay.io"><strong>estimay.io</strong></a> ·
   <a href="https://estimay.io/features">Features</a> ·
   <a href="https://estimay.io/integrations">Integrations</a> ·
@@ -79,15 +95,35 @@ Tools: `create_room`, `join_room`, `list_rooms`, `get_room`, `add_stories`, `imp
 
 The assistant prepares the room and records the outcome; the vote stays with the team. It never sees a card before the reveal. Every tool and its arguments: [estimay.io/developers](https://estimay.io/developers).
 
+## The fun bits
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/screenshots/reactions.webp" alt="A tennis ball and a dart flying at people's cards, with hearts and a party popper floating up"><br><sub>Throw a 🎾 or a 🎯 at a teammate's card, or float ❤️ and 🎉 up everyone's screen.</sub></td>
+    <td width="50%"><img src="assets/screenshots/emoji-picker.webp" alt="The emoji picker open on the room's top bar"><br><sub>Any emoji, from a picker that stays open for more.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/extra-questions-voting.webp" alt="Voting on the AI tokens question, one of four voting dimensions"><br><sub>AI tokens, Risk and Agent-ready, voted next to the story points.</sub></td>
+    <td><img src="assets/screenshots/extra-questions-results.webp" alt="The revealed cards with the answers to Risk, Agent-ready and AI tokens"><br><sub>Their answers after the reveal, kept with the story.</sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/timer.webp" alt="A discussion timer counting down in the top bar"><br><sub>A discussion timer for the whole room, with a bell when time's up.</sub></td>
+    <td><img src="assets/screenshots/presenter.webp" alt="The presenter view for a shared screen"><br><sub>A presenter view for the shared screen, with a QR code to join.</sub></td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="assets/screenshots/printable-cards.webp" alt="Printable sheets of planning poker card faces and backs"><br><sub><a href="https://estimay.io/printable-planning-poker-cards">Printable cards</a> for teams who'd rather hold them: any deck, A4 or US Letter, faces and backs.</sub></td>
+  </tr>
+</table>
+
 ## Screenshots
 
 <table>
   <tr>
-    <td><img src="assets/screenshots/room-results.webp" alt="The results after a reveal"></td>
-    <td><img src="assets/screenshots/room-consensus.webp" alt="A round that reached consensus"></td>
+    <td width="50%"><img src="assets/screenshots/room-results.webp" alt="The results after a reveal"></td>
+    <td width="50%"><img src="assets/screenshots/room-consensus.webp" alt="A round that reached consensus"></td>
   </tr>
   <tr>
-    <td><img src="assets/screenshots/presenter.webp" alt="The presenter view for a shared screen"></td>
+    <td><img src="assets/screenshots/settings.webp" alt="The room's settings"></td>
     <td><img src="assets/screenshots/import.webp" alt="Importing stories from a tracker"></td>
   </tr>
   <tr>
