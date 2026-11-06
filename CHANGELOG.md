@@ -2,6 +2,40 @@
 
 What changed on [estimay.io](https://estimay.io), newest first. Estimay is a hosted app, so every change reaches everyone the day it ships.
 
+## 2026-11-06
+
+- **Story descriptions:** give a story its goal and acceptance criteria, or bring them in from Jira, Linear, Trello, Asana or GitHub ("Include descriptions" in the import, on by default). Everyone reads them under the story's Details while voting, and they're in the CSV download and import.
+- The MCP server reads and writes descriptions too: `add_stories`, `edit_story` and `import_stories` take them, and `export_results` includes them in CSV.
+- A blog article on [prepping your backlog with AI before planning poker](https://estimay.io/blog/ai-backlog-prep-mcp).
+
+## 2026-11-05
+
+- **Lo Ball:** a second icebreaker, a real-time football match for two teams, played on the keyboard.
+- A refreshed home page.
+
+## 2026-11-04
+
+- A [getting started guide](https://estimay.io/docs/getting-started) for your first planning poker round.
+
+## 2026-11-03
+
+- **AI participants:** ask your own assistant, such as Claude, to sit in on the vote over MCP (`add_ai_participant`, `ai_vote`). It gets a seat marked AI and plays its own card with a short reason, face down until the reveal.
+- New MCP tool `set_extra_questions`, and an [AI estimation](https://estimay.io/ai-planning-poker) page.
+- Blog articles on scrum poker in Google Meet, adding an AI participant, and estimating a software project as a team.
+
+## 2026-11-01
+
+- **Icebreakers:** [Closest Guess Wins](https://estimay.io/icebreakers/closest-guess-wins), where everyone guesses in secret, the closest scores and the farthest takes the wheel's forfeit. The host or a facilitator starts one from a live room's top bar.
+
+## 2026-10-31
+
+- A [story point calculator](https://estimay.io/story-point-calculator) and a [sprint capacity calculator](https://estimay.io/sprint-capacity-calculator).
+
+## 2026-10-30
+
+- Estimay no longer shows ads or asks for donations.
+- A more responsive voting deck.
+
 ## 2026-10-28
 
 - Mobile layout fixes in the room.
