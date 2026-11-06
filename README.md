@@ -26,6 +26,7 @@
 
 <p align="center">
   <a href="https://estimay.io"><strong>estimay.io</strong></a> ·
+  <a href="https://estimay.io/docs/getting-started">Getting started</a> ·
   <a href="https://estimay.io/features">Features</a> ·
   <a href="https://estimay.io/integrations">Integrations</a> ·
   <a href="https://estimay.io/developers">Developers</a> ·
@@ -49,9 +50,12 @@
 - **Roles:** the host, any number of facilitators, voters and spectators. A host who has to leave can hand the room over.
 - **Presenter view** for a shared screen, with a QR code to join, fullscreen, and a floating always-on-top scoreboard in Chrome and Edge.
 - **Stories** typed in, pasted as tracker links, imported from CSV or a tracker, reordered in a queue, and exported as CSV when you're done.
+- **Story descriptions:** a goal and acceptance criteria under each story's Details while the team votes, typed in or brought in from the tracker, and kept in the CSV.
+- **AI participants:** ask your own assistant, such as Claude, to sit in on the vote. It gets a seat marked AI and plays its own card with a short reason, face down until the reveal like everyone's.
+- **Icebreakers** to warm up before planning: [Closest Guess Wins](https://estimay.io/icebreakers/closest-guess-wins) and [Lo Ball](https://estimay.io/icebreakers/lo-ball), a real-time football match on the keyboard.
 - **Private by default:** no accounts, hosted in the EU (Amsterdam), and rooms are deleted 7 days (live) or 30 days (async) after they were last used.
 
-Every feature available today is free, with no card needed.
+Every feature available today is free, with no card needed, and Estimay shows no ads. New here? [Run your first round](https://estimay.io/docs/getting-started).
 
 ## Decks
 
@@ -68,11 +72,11 @@ Every feature available today is free, with no card needed.
 
 ## Works with your tools
 
-| Kind          | Apps                                                                                                                                                                                                                                                 | What they do                                                           |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Chat and call | [Google Meet](https://estimay.io/google-meet-scrum-poker), [Telegram](https://estimay.io/telegram-scrum-poker), [Slack](https://estimay.io/slack-scrum-poker) (experimental), [Discord](https://estimay.io/discord-scrum-poker) (experimental)       | Start and join rooms without leaving the app, with your name filled in |
-| Trackers      | [Jira](https://estimay.io/jira-scrum-poker), [Linear](https://estimay.io/linear-scrum-poker), [Trello](https://estimay.io/trello-scrum-poker), [Asana](https://estimay.io/asana-scrum-poker), [GitHub Issues](https://estimay.io/github-scrum-poker) | Import stories, then write the agreed estimates back                   |
-| AI assistants | [Claude](https://claude.ai/directory/estimay), Claude Code, Cursor, ChatGPT, VS Code ([remote MCP](https://estimay.io/mcp-scrum-poker))                                                                                                              | Set up a room, add stories, run a round and record the estimates       |
+| Kind          | Apps                                                                                                                                                                                                                                                 | What they do                                                            |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Chat and call | [Google Meet](https://estimay.io/google-meet-scrum-poker), [Telegram](https://estimay.io/telegram-scrum-poker), [Slack](https://estimay.io/slack-scrum-poker) (experimental), [Discord](https://estimay.io/discord-scrum-poker) (experimental)       | Start and join rooms without leaving the app, with your name filled in  |
+| Trackers      | [Jira](https://estimay.io/jira-scrum-poker), [Linear](https://estimay.io/linear-scrum-poker), [Trello](https://estimay.io/trello-scrum-poker), [Asana](https://estimay.io/asana-scrum-poker), [GitHub Issues](https://estimay.io/github-scrum-poker) | Import stories, then write the agreed estimates back                    |
+| AI assistants | [Claude](https://claude.ai/directory/estimay), Claude Code, Cursor, ChatGPT, VS Code ([remote MCP](https://estimay.io/mcp-scrum-poker))                                                                                                              | Set up a room, add stories, sit in on the vote and record the estimates |
 
 Connecting a tracker is optional and belongs to the room: if you don't connect one, Estimay never touches your backlog.
 
@@ -91,9 +95,20 @@ Or install the Claude Code plugin, which adds a planning poker skill on top:
 /plugin install estimay@estimay
 ```
 
-Tools: `create_room`, `join_room`, `list_rooms`, `get_room`, `add_stories`, `import_stories`, `start_voting`, `vote`, `reveal`, `set_estimate`, `edit_story`, `delete_story`, `revote`, `start_timer`, `change_deck`, `set_disciplines`, `set_facilitator`, `export_results`, `write_estimates`, `end_room`. Every room you're in is also a resource (`estimay://rooms/{code}`).
+Tools: `create_room`, `join_room`, `list_rooms`, `get_room`, `add_stories`, `import_stories`, `start_voting`, `vote`, `add_ai_participant`, `ai_vote`, `reveal`, `set_estimate`, `edit_story`, `delete_story`, `revote`, `start_timer`, `change_deck`, `set_disciplines`, `set_extra_questions`, `set_facilitator`, `export_results`, `write_estimates`, `end_room`. Every room you're in is also a resource (`estimay://rooms/{code}`).
 
-The assistant prepares the room and records the outcome; the vote stays with the team. It never sees a card before the reveal. Every tool and its arguments: [estimay.io/developers](https://estimay.io/developers).
+The assistant prepares the room and records the outcome; the vote stays with the team. It never sees anyone's card before the reveal, and never suggests an estimate before it. Every tool and its arguments: [estimay.io/developers](https://estimay.io/developers).
+
+### AI participants
+
+If you ask it to, your assistant can also sit in on the vote: the host or a facilitator adds it (`add_ai_participant`), and it plays its own card on each story with a short reason (`ai_vote`), reading the story's title, description and tracker link. Its card stays face down until the reveal and counts like anyone's; its reason shows on its seat afterwards. Estimay runs no model of its own, so the AI is whichever assistant you connect, at no extra cost. How to set it up, and when it helps: [AI estimation](https://estimay.io/ai-planning-poker).
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/screenshots/ai-seat-voting.webp" alt="Mid-round: three people and Claude, marked AI, with face-down cards; the count says 3 of 4 voted"><br><sub>The AI's card is down, and nothing about it shows yet.</sub></td>
+    <td width="50%"><img src="assets/screenshots/ai-seat-results.webp" alt="After the reveal: the team's cards and Claude's 13, with its reason in a tooltip on its seat"><br><sub>After the reveal, its card and why it picked it.</sub></td>
+  </tr>
+</table>
 
 ## The fun bits
 
@@ -114,6 +129,12 @@ The assistant prepares the room and records the outcome; the vote stays with the
     <td colspan="2"><img src="assets/screenshots/printable-cards.webp" alt="Printable sheets of planning poker card faces and backs"><br><sub><a href="https://estimay.io/printable-planning-poker-cards">Printable cards</a> for teams who'd rather hold them: any deck, A4 or US Letter, faces and backs.</sub></td>
   </tr>
 </table>
+
+## Free tools
+
+- [Icebreakers](https://estimay.io/icebreakers): **Closest Guess Wins** (secret guesses; the closest scores, the farthest takes the wheel's forfeit) and **Lo Ball** (two teams, one ball, a quick football match on the keyboard). The host or a facilitator starts one from a live room's top bar, and everyone plays in the room.
+- [Story point calculator](https://estimay.io/story-point-calculator) and [sprint capacity calculator](https://estimay.io/sprint-capacity-calculator).
+- [Printable planning poker cards](https://estimay.io/printable-planning-poker-cards) for any deck.
 
 ## Screenshots
 
