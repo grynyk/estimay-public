@@ -33,13 +33,20 @@ Want something moved up, or is something missing? [Open a feature request](https
 
 ## Planning poker for AI-assisted teams
 
-- **Story notes:** the goal, scope, constraints and open questions the team agreed on, kept next to the estimate and in the CSV.
+A story's description already holds its goal and scope, and the host can update it during the vote. Next:
+
 - **Questions from the ? card:** whoever plays ? can type the question behind it, listed under the story after the reveal.
-- **Copy as an agent-ready brief:** a story, its estimate and its notes as Markdown, ready for a ticket or an agent's prompt.
+- **Copy as an agent-ready brief:** a story, its description, its agreed estimate and the answers to its extra questions as Markdown, ready for a ticket or an agent's prompt.
 - **Actuals and calibration:** import what each story really used (tokens, passes, review time) and see it next to the estimate.
+
+## AI: through your own assistant
+
+Estimay won't run an AI model of its own, as that would mean sending your room to a provider we picked. AI reaches a room only through an assistant someone connects over [MCP](https://estimay.io/mcp-scrum-poker), so the model and the provider are your choice, and when it [sits in on the vote](https://estimay.io/ai-planning-poker) it plays face down like everyone else.
 
 ## What stays the same
 
 - Joining stays instant: a link and a name, no account.
 - Anything that stores more, or shares data with another service, is opt-in, and the Privacy Policy is updated first.
-- An AI never votes, and never shows a suggested estimate before the team's cards are revealed.
+- No suggested estimate before the team's cards are revealed: an AI votes only when you ask it to sit in, and its card stays face down until the reveal.
+- No ads, and new features don't bring third-party scripts.
+- Starting a session takes under a minute.
